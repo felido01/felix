@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Felix Idowu - Data Analyst & Developer with expertise in data visualization, predictive modeling, and business intelligence.">
+  <meta name="keywords" content="data analyst, data visualization, business intelligence, Felix Idowu, portfolio">
+  <meta name="author" content="Felix Idowu">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Felix Idowu | Data Analyst & Developer">
+  <meta property="og:description" content="Explore Felix Idowu's portfolio showcasing data analysis, visualization, and development projects.">
+  <meta property="og:image" content="/1746441132098.jpg">
+  <meta property="og:url" content="https://your-portfolio.netlify.app">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Felix Idowu | Data Analyst & Developer</title>
+  <link rel="icon" href="/favicon.svg" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'" defer>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfHmjArAAAAANenZJAgCH9td5FhHz2Zpui1w0X3" async defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="overflow-x-hidden bg-gray-950 text-gray-100 no-select">
+  <noscript>
+    <style>
+      #preloader { display: none; }
+      .obfuscated-section { display: block; }
+      .no-select { user-select: auto; }
+    </style>
+    <div class="bg-yellow-900 text-yellow-100 p-4 text-center">
+      <p>JavaScript is disabled. Some content is protected from scraping and may not display fully. Contact me at <a href="mailto:felixidowu48@gmail.com" class="underline">felixidowu48@gmail.com</a>.</p>
+    </div>
+  </noscript>
+
+  <div id="preloader">
+    <div class="loader">
+      <div class="loader-text">Felix Idowu</div>
+      <div class="loader-spinner"></div>
+    </div>
+  </div>
+
+  <div id="profileModal" role="dialog" aria-labelledby="profileModalTitle">
+    <div class="modal-content">
+      <span class="modal-close" role="button" aria-label="Close modal"><i class="fas fa-times"></i></span>
+      <img src="./1746441132098.jpg" alt="Felix Idowu Profile Large" loading="lazy">
+    </div>
+  </div>
+
+  <div id="progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 z-50 transition-all"></div>
+
+  <header class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-2 sm:p-4">
+      <div class="flex items-center gap-2">
+        <div class="profile-img-container" id="profileImgContainer" role="button" aria-label="View profile image">
+          <img src="./1746441132098.jpg" alt="Felix Idowu Profile" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover border-2 border-indigo-600 shadow-md profile-img" loading="lazy">
+          <div class="profile-img-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <a href="#" class="text-xl sm:text-2xl font-bold tracking-tight">
+          <span class="gradient-text">FELIX IDOWU</span>
+        </a>
+      </div>
+      <nav class="hidden md:flex space-x-4" aria-label="Main navigation">
+        <a href="#x-about" class="nav-link text-gray-300 hover:text-white animate-fade-slide-in animation-delay-100">About</a>
+        <a href="#x-skills" class="nav-link text-gray-300 hover:text-white animate-fade-slide-in animation-delay-200">Skills</a>
+        <a href="#x-projects" class="nav-link text-gray-300 hover:text-white animate-fade-slide-in animation-delay-300">Projects</a>
+        <a href="#x-experience" class="nav-link text-gray-300 hover:text-white animate-fade-slide-in animation-delay-400">Experience</a>
+        <a href="#x-certifications" class="nav-link text-gray-300 hover:text-white animate-fade-slide-in animation-delay-500">Certifications</a>
+        <a href="#x-contact" class="nav-link text-gray-300 hover:text-white animate-fade-slide-in animation-delay-600">Contact</a>
+      </nav>
+      <button id="hamburger" class="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none" aria-label="Toggle mobile menu">
+        <span class="block h-0.5 bg-white transition-all duration-300 transform" id="line1"></span>
+        <span class="block h-0.5 bg-white transition-all duration-300" id="line2"></span>
+        <span class="block h-0.5 bg-white transition-all duration-300 transform" id="line3"></span>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-gray-900/95 backdrop-blur-lg border-t border-gray-800">
+      <div class="flex flex-col py-4 px-6 space-y-3" aria-label="Mobile navigation">
+        <a href="#x-about" class="nav-link text-gray-300 hover:text-white py-2 text-lg">About</a>
+        <a href="#x-skills" class="nav-link text-gray-300 hover:text-white py-2 text-lg">Skills</a>
+        <a href="#x-projects" class="nav-link text-gray-300 hover:text-white py-2 text-lg">Projects</a>
+        <a href="#x-experience" class="nav-link text-gray-300 hover:text-white py-2 text-lg">Experience</a>
+        <a href="#x-certifications" class="nav-link text-gray-300 hover:text-white py-2 text-lg">Certifications</a>
+        <a href="#x-contact" class="nav-link text-gray-300 hover:text-white py-2 text-lg">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 pt-20 pb-16 relative overflow-hidden x-section">
+    <div class="max-w-4xl mx-auto">
+      <div class="mb-6 animate-fade-slide-up">
+        <span class="inline-block px-3 py-1 text-sm font-medium rounded-full bg-indigo-900/50 text-indigo-300 border border-indigo-800/50">
+          Data Analyst & Developer
+        </span>
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-bold mb-6 animate-fade-slide-up animation-delay-200">
+        <span class="gradient-text">Hi, I'm Felix</span>
+      </h1>
+      <p id="typed" class="text-xl sm:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-slide-up animation-delay-400"></p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 hero-buttons">
+        <a href="#x-projects" class="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full font-medium hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-indigo-500/20 btn-shine animate-fade-slide-up animation-delay-600">
+          View My Work
+        </a>
+        <a href="#x-contact" class="px-8 py-3 bg-gray-800 hover:bg-gray-700 rounded-full font-medium border border-gray-700 transition-all duration-300 transform hover:scale-105 btn-shine animate-fade-slide-up animation-delay-800">
+          Contact Me
+        </a>
+      </div>
+    </div>
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <div class="absolute w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl top-1/4 left-1/4 animate-parallax"></div>
+      <div class="absolute w-80 h-80 bg-purple-600/20 rounded-full blur-3xl bottom-1/4 right-1/4 animate-parallax animation-delay-2000"></div>
+      <div class="absolute w-96 h-96 bg-pink-600/10 rounded-full blur-3xl top-1/3 right-1/3 animate-parallax animation-delay-4000"></div>
+    </div>
+    <div class="scroll-indicator" id="scrollIndicator">
+      <svg class="arrow" viewBox="0 0 24 40" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 28L4 20L6.8 17.2L12 22.4L17.2 17.2L20 20L12 28ZM12 20L4 12L6.8 9.2L12 14.4L17.2 9.2L20 12L12 20Z" />
+      </svg>
+    </div>
+  </div>
+
+  <div id="x-about" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto x-section obfuscated-section no-select" data-section="about">
+    <div class="flex flex-col items-center gap-12">
+      <div class="w-full">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 gradient-text">About Me</h2>
+        <p class="text-lg text-gray-300 mb-6 leading-relaxed animate-fade-in-left animation-delay-200">
+          Inquisitive Data Analyst with 2 years of hands-on experience from internships, real-life data analysis projects, and university-sponsored data projects. Proficient in data cleaning, data wrangling, and exploratory data analysis (EDA) using Python (Pandas, NumPy) and SQL. Experienced in building interactive dashboards and data visualizations with Power BI and Matplotlib to help businesses make data-driven decisions. Skilled in statistical analysis, data storytelling, and creating reports that provide clear insights. Zealous about using data to uncover trends, improve processes, and solve problems.
+        </p>
+        <p class="text-lg text-gray-300 mb-8 leading-relaxed animate-fade-in-left animation-delay-400">
+          When I'm not crunching numbers, I build interactive dashboards and web applications to make data accessible. My mission is to empower organizations with strategic, data-driven decisions.
+        </p>
+        <div class="flex flex-wrap gap-4 animate-fade-in-left animation-delay-600">
+          <div class="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
+            <div class="w-2 h-2 bg-indigo-400 rounded-full"></div>
+            <span>Available for freelance</span>
+          </div>
+          <div class="flex items-center gap-2 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700">
+            <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+            <span>Open to collaborations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="x-skills" class="py-16 sm:py-20 px-4 sm:px-6 bg-gray-900/30 x-section obfuscated-section no-select" data-section="skills">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 gradient-text">My Skills</h2>
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto animate-fade-in-left animation-delay-200">
+          Combining analytical expertise with technical skills to deliver impactful data solutions.
+        </p>
+      </div>
+      <div class="x-grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6" id="skillsGrid"></div>
+    </div>
+  </div>
+
+  <div id="x-projects" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto x-section obfuscated-section no-select" data-section="projects">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4 gradient-text">Featured Projects</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto animate-fade-in-left animation-delay-200">
+        Recent projects showcasing my expertise in data analysis and visualization.
+      </p>
+    </div>
+    <div class="x-grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8" id="projectsGrid"></div>
+    <div class="text-center mt-12 animate-fade-in-left animation-delay-500">
+      <a href="projects.html" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-700 rounded-full text-gray-300 hover:text-white hover:border-indigo-500 transition-all btn-shine">
+        View All Projects
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div id="x-experience" class="py-20 px-4 sm:px-6 bg-gray-900/30 x-section obfuscated-section no-select" data-section="experience">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 gradient-text">Work Experience</h2>
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto animate-fade-in-left animation-delay-200">My professional journey and key accomplishments.</p>
+      </div>
+      <div class="relative space-y-12 experience-timeline" id="experienceTimeline"></div>
+    </div>
+  </div>
+
+  <div id="x-certifications" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto x-section obfuscated-section no-select" data-section="certifications">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4 gradient-text">Certifications</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto animate-fade-in-left animation-delay-200">
+        Professional certifications in data analytics and business intelligence.
+      </p>
+    </div>
+    <div class="x-grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8" id="certificationsGrid"></div>
+  </div>
+
+  <div id="x-contact" class="py-20 px-4 sm:px-6 max-w-4xl mx-auto x-section">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4 gradient-text">Get In Touch</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto animate-fade-in-left animation-delay-200">Interested in collaborating or have a project in mind? Let's connect!</p>
+    </div>
+    <div class="x-grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="animate-fade-in-left animation-delay-100 no-select">
+        <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="mt-1 text-indigo-400"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4 class="font-medium">Email</h4>
+              <a href="mailto:felixidowu48@gmail.com" class="text-gray-400 hover:text-indigo-400 transition">felixidowu48@gmail.com</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="mt-1 text-purple-400"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4 class="font-medium">Phone</h4>
+              <a href="tel:+1234567890" class="text-gray-400 hover:text-purple-400 transition">+1 (234) 567-890</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="mt-1 text-pink-400"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4 class="font-medium">Location</h4>
+              <p class="text-gray-400">Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <a href="/resume.pdf" download class="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-medium transition transform hover:scale-105 btn-shine">
+            Download Resume <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+      <div class="animate-fade-in-left animation-delay-200">
+        <form id="contactForm" class="space-y-4" novalidate>
+          <input type="text" id="honeypot" name="honeypot" class="honeypot" tabindex="-1" autocomplete="off">
+          <div id="formMessage" class="hidden p-4 rounded-lg text-sm"></div>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" required aria-describedby="name-error">
+            <label for="name">Name</label>
+            <p id="name-error" class="text-red-400 text-sm mt-1 hidden">Please enter your name.</p>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" required aria-describedby="email-error">
+            <label for="email">Email</label>
+            <p id="email-error" class="text-red-400 text-sm mt-1 hidden">Please enter a valid email address.</p>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="4" placeholder=" " class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition" required aria-describedby="message-error message-counter" maxlength="500"></textarea>
+            <label for="message">Message</label>
+            <div class="flex justify-between">
+              <p id="message-error" class="text-red-400 text-sm mt-1 hidden">Please enter a message.</p>
+              <p id="message-counter" class="text-gray-500 text-sm mt-1">0/500</p>
+            </div>
+          </div>
+          <button type="submit" id="submitButton" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium py-3 px-6 rounded-lg transition transform hover:scale-105 flex items-center justify-center btn-shine">
+            <span id="buttonText">Send Message</span>
+            <svg id="loadingSpinner" class="hidden animate-spin h-5 w-5 ml-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <svg id="successIcon" class="success-icon ml-2 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 16.2l-3.5-3.5a.984.984 0 0 0-1.4 0 .984.984 0 0 0 0 1.4l4.2 4.2c.39.39 1.01.39 1.4 0l8.4-8.4a.984.984 0 0 0 0-1.4.984.984 0 0 0-1.4 0L9 16.2z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-12 px-4 sm:px-6 bg-gray-900 border-t border-gray-800 x-section no-select">
+    <div class="max-w-6xl mx-auto">
+      <div class="x-grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div class="space-y-4">
+          <a href="#" class="inline-block text-2xl font-bold tracking-tight">
+            <span class="gradient-text">FELIX IDOWU</span>
+          </a>
+          <p class="text-gray-400 text-sm">Data Analyst & Developer</p>
+          <p class="text-gray-500 text-sm">Transforming data into actionable insights.</p>
+        </div>
+        <div class="space-y-4">
+          <h4 class="text-lg font-medium text-white">Quick Links</h4>
+          <div class="flex flex-col space-y-2">
+            <a href="#x-about" class="text-gray-400 hover:text-white transition">About</a>
+            <a href="#x-skills" class="text-gray-400 hover:text-white transition">Skills</a>
+            <a href="#x-projects" class="text-gray-400 hover:text-white transition">Projects</a>
+            <a href="#x-experience" class="text-gray-400 hover:text-white transition">Experience</a>
+            <a href="#x-certifications" class="text-gray-400 hover:text-white transition">Certifications</a>
+            <a href="#x-contact" class="text-gray-400 hover:text-white transition">Contact</a>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <h4 class="text-lg font-medium text-white">Stay Connected</h4>
+          <div class="flex justify-center md:justify-start gap-4 mt-4">
+            <a href="http://www.linkedin.com/in/felix-idowu-4347a4268" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-indigo-600 rounded-full transition" aria-label="LinkedIn profile">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/felido01" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-gray-700 rounded-full transition" aria-label="GitHub profile">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/01_felixidowu" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-blue-500 rounded-full transition" aria-label="Twitter profile">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://medium.com/@felixidowu.01" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-pink-600 rounded-full transition" aria-label="Medium profile">
+              <i class="fab fa-medium"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500 text-sm">
+        <p>© <span id="year"></span> Felix Idowu. All rights reserved. | <a href="/terms" class="underline">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" class="fixed bottom-8 right-8 w-12 h-12 bg-indigo-600 hover:bg-indigo-700 rounded-full flex items-center justify-center shadow-lg transition transform hover:scale-110 hidden" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
